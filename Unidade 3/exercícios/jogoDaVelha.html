@@ -5,18 +5,34 @@
         <title>Jogo da Velha</title>
 
         <script type="text/javascript" src="js/jogoDaVelha.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/jogoDaVelha.css" media="screen" />
     </head>
+    
+    <body onload="iniciar()" style="background-color:rgb(231, 231, 230); text-align:center;">
+        <header>
+            <h1>Jogo da Velha</h1>
+            
+        </header>
+        <hr>
+        <p> O jogo é realizado por dois jogadores. Cada um deverá escolher as coordenadas que deseja
+            marcar no tabuleiro.
+        </p>
+        <hr>
 
-    <body onload="iniciar()">
         <div id="board"></div><br>
+       
         
+        <div>
+        Linha: <input type="number" min="1" max="3" id="linha" style="margin-bottom: 0.5%; margin-left: 0.77%;"><br>
+        Coluna: <input type="number" min="1" max="3" id="coluna" ><br>
+        </div>
 
-        Linha: <input type="number" min="1" max="3" id="linha"><br>
-        Coluna: <input type="number" min="1" max="3" id="coluna"><br>
-
-        <button onclick="jogar()">Marcar</button><br>
-
-        <div id="aviso">Vez do jogador 1</div>
+        
+        <button onclick="jogar()" style="margin-bottom: 0.5%;">Marcar</button><br>
+       
+        <input type="button" value="Reiniciar" onClick="window.location.reload()"> 
+        
+        <div id="aviso" style="font-size: 200%;">Vez do jogador 1</div>
 
         
     </body>
