@@ -1,0 +1,45 @@
+h1{ 
+    color: red;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p{
+    text-align: justify;
+    text-decoration: solid;
+}
+
+header{
+    background-color: #cccccc;
+}
+main{
+    margin: auto 20%;
+}
+
+.destaque{
+    text-align: center;
+    background-color: brown;
+    color:aliceblue;
+    padding: 10px;
+
+}
+#image-logo{
+    width: 100px;
+    height: 60px;
+}
+
+nav li{
+    display: inline;
+    margin-left: 20px;
+    color:#971a1a;
+    font-weight: bold;
+    border: 2px solid #971a1a ;
+    padding: 5px;
+}
+nav{
+    float: right;
+}
+li:hover{
+    background-color: whitesmoke;
+    -webkit-transition:1s;
+}

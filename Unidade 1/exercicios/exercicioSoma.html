@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exercício Soma</title>
+        
+        <script>
+
+            // Passo 1: Entrada de Dados
+           const n1 = parseInt(prompt("Digite um número:"))
+           const n2 = parseInt(prompt("Digite outro número:"))
+
+            // Passo 2: Processamento de Dados
+           const soma = n1 + n2  // Também pode aplicar o parseInt apenas aqui em cada um deles
+                                // Então ficaria: const soma = parseInt(n1) + parseInt(n2)
+
+           /*
+           No JavaScript, o operador + tem a função de somar e de concatenar. Se o operador + se deparar com 
+           números (integer), ele irá somá-los. Porém, se for texto (string) e irá juntá-los. Sendo assim,
+           vamos precisar da função parseInt que transformará a string em integer sempre que possível. 
+           Para os outros operadores não é necessário.
+           Para fazer somas com números decimais, a função é parseFloat
+           A função Number pode substituir as outras duas funções e automaticamente identificará se é 
+           inteiro ou decimal. 
+           */
+
+            // Passo 3: Saída de Dados
+            console.log("A soma é " + soma) // vamos usar o = com a função de concatenar
+                                            // Lembrando que o "" indica que é um texto (string)
+        </script>
+    </head>
+<body>
+
+</body>
+
+
+</html>
