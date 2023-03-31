@@ -25,7 +25,7 @@ function iniciar(){
 }
 
 function exibir(){
-    let tabela = "<table cellpadding ='10' border = '1'>"
+    let tabela = "<table cellpadding ='40' border = '1'  style=' margin-left: 40%;'>"
     for(let i = 0 ; i < 3 ; i++){
         tabela += "<tr>"
         for(let j = 0; j < 3 ; j++){
