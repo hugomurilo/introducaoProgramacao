@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang = pt-br>
+    <head>
+        <meta charset="UTF-8">
+        <title>Estruturas de Repetição - FOR</title>
+    </head>
+    
+    <body>
+<script>
+
+const qtd = prompt("Digite a quantidade de notas") 
+let nota = 0
+let soma = 0
+
+
+
+// inicialização (Geralmente utiliza-se a letra i para contador na programação)
+// condição (teste)
+// incremento 
+// No while essas três etapas estão em lugares diferentes. No for fica tudo dentro dele. 
+for(let i = 1; i <= qtd; i++){
+    nota = Number(prompt("Digite a nota " + i))
+    soma = soma + nota
+}
+
+const media = soma / qtd
+console.log('A média é ' + media)
+
+
+
+
+
+
+
+</script>
+
+    </body>
+</html>

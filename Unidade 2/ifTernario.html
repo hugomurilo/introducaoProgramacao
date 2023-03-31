@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head >
+        <meta charset="UTF-8">
+        <title>Calcular Média - If Ternário</title>
+
+        <script>
+        const n1 = Number(prompt("Digite a nota 1"))
+        const n2 = Number(prompt("Digite a nota 2"))
+        const n3 = Number(prompt("Digite a nota 3"))
+        const n4 = Number(prompt("Digite a nota 4"))
+        const media = (n1 + n2 + n3 + n4) / 4
+        
+        console.log("A média é " + media)
+        
+        /*
+        if(media >= 7){
+            console.log("Aprovado!")
+        } else {
+            console.log("Reprovado!")
+        }
+        */
+        
+       /* 
+       let mensagem = ''
+        if(media >= 7){
+            mensagem = 'Aprovado'
+        } else {
+            mensagem = 'Reprovado'
+        }
+        console.log(mensagem) 
+        */
+        
+    //    media >= 7 ? console.log("Aprovado!") : console.log("Reprovado!")
+// esse código é o if Ternário, uma forma de escrever o if else. Resume em uma linha de código todo o restante
+// outra forma mais limpa ainda é a seguinte:
+
+let mensagem = media >= 7 ? 'Aprovado!' : 'Reprovado!'
+console.log(mensagem)
+// a variável será definida de acordo com a condição: se for verdadeira, receberá Aprovado, se falso, Reprovado
+ 
+
+
+        </script>
+    </head>
+    <body>
+    
+    
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang = pt-br>
+    <head>
+        <meta charset="UTF-8">
+        <title>Estruturas de Repetição - For In e For Of</title>
+    </head>
+    
+    <body>
+<script>
+
+    const nome = 'Hugo'  // variável do tipo string
+    const nota = 1      // variável do tipo integer 
+    const pessoa = {
+        nome: 'Hugo', 
+        telefone: '(61) 99671-9932' , 
+        endereço: 'ABC'
+    }                                   // variável objeto: multivalorada (vários "atributos" do mesmo objeto)
+
+    const carros = ['gol', 'fusca', 'ferrari', 'vectra'] // variável do tipo array: varios "itens" que pertencem a carros diferentes
+
+// como posso navegar pelos atributos do objeto ?
+
+   // console.log(pessoa.telefone)
+   // console.log(pessoa['telefone'])
+
+    // Estrutura do For in
+   /*
+   for(let atributo in pessoa ){                // coloque na variável atributo o que estiver em pessoa
+       // console.log(atributo)                 // esse é o for in
+        console.log(atributo + ' -> ' + pessoa[atributo])
+   }
+   */
+
+    // Estrutura do for of 
+
+    //console.log(carros[0])
+
+    for(let car of carros){
+
+        console.log(car)
+
+
+    }
+
+
+
+
+
+</script>
+
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang = pt-br>
+    <head>
+        <meta charset="UTF-8">
+        <title>Estruturas de Repetição - Usando o Do</title>
+    </head>
+    
+    <body>
+<script>
+
+let contador = 1
+const qtd = prompt('Quantas notas?')
+let soma = 0
+let nota = 0
+let indice = 1
+
+// esse função executa o código em loop enquanto a condição nela for verdadeira
+while(contador <=qtd ){
+
+    do{
+        nota = Number(prompt("Digite a nota " + contador))
+
+    } while(nota > 10) /* Equanto a nota for maior 10, execute o comando acima (faça isso, enquanto for). 
+    Sendo assim, ele ficará repetindo "Digite a nota" enquanto o número não for menor ou igual a 10.
+    Perceba que ele primeiro executa a linha de código "Digite a nota" para só então verificar a condição
+    nota > 10*/
+    soma = soma + nota                                           //ou pode ser --
+    contador ++                                                  //contador = contador + 1
+ 
+}
+console.log('A soma é ' + soma)
+let media = soma/qtd
+console.log('A média é ' + media)
+
+let resultado = (media) >= 7 ? 'Aprovado!' : 'Reprovado!'
+console.log('Resultado : ' + resultado)
+
+
+
+
+
+
+
+
+
+
+</script>
+
+    </body>
+</html>
