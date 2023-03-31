@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Arrays Multidimensionais</title>
+
+    <script>
+        // nessa variável temos string, então vamos trabalhar como string
+        const nomes = [
+            'Hugo', 
+            'Isabel', 
+            'Hygor', 
+            'Vitória'
+        ] 
+
+        // nessa variável temos integer, então vamos trabalhar como integer
+        const idades = [
+            18,
+            24,
+            25,
+            32
+        ]
+
+        //Uma array multidimensional é quando seus dados são compostos por outra array 
+        //Basicamente, arrays são matrizes
+        //nessa variável temos array, então vamos trabalhar como array
+        const notas = [
+            [5, 10, 9, 4],
+            [6, 7, 2, 10],
+            [8, 6, 7, 9]      
+        ]
+ 
+        /*
+        const notas = [
+            [5, 10, 9, 4],
+            [6, 7, 2, 10],
+            [8, 6, 7, [10, 3, 4]] // também é possível colocar outra array no lugar de um elemento
+            console.table(notas[2][3][1])
+        */
+        /*
+        console.log(nomes[2])
+        console.log(idades[2])
+        console.table(notas[0][1])
+        */
+
+        const pessoa = {nome: 'Hugo', telefone: '(61) 99698-6465', endereço: 'rua 75'}
+       
+        //Para objetos utiliza-se chaves, para arrays utiliza-se colchetes.
+        // Perceba que na variável pessoas há várias informações, sendo cada uma sendo um objeto
+        //nessa variável temos objetos, então vamos trabalhar como objetos
+        const pessoas = [
+        {nome: 'Hugo', telefone: '(61) 99698-6475', endereço: 'rua 75'},
+        {nome: 'Maria', telefone: '(61) 99698-6865', endereço: 'rua 25'},
+        {nome: 'José', telefone: '(61) 99698-6435', endereço: 'rua 35'},
+        {nome: 'Carlos', telefone: '(61) 99698-1465', endereço: 'rua 78'}
+        ]
+        console.table(pessoas)
+        console.log(pessoas[2].nome) // perceba qie é diferente, pois objetos têm atributos
+        console.log(pessoas[3].endereço)
+        console.log(pessoas[2]['endereço']) // outro jeito de fazer a mesma coisa
+        console.log(pessoas[2])
+
+
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

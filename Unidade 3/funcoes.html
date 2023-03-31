@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Funções</title>
+<script type="text/javascript" src = "js\funcoes.js" ></script>
+
+
+</head>
+<body>
+    <form action="">
+        N1: <input type="text" id="n1" /> <br>
+        N2: <input type="text" id="n2" /> <br>
+        
+
+        <input type="button" value="Somar" onclick="calcular('+')" /> <!-- está chamando a função somar -->
+        <input type="button" value="Subtrair" onclick="calcular('-')" /> 
+        <input type="button" value="Multiplicar" onclick="calcular('*')" /> 
+        <input type="button" value="Dividir" onclick="calcular('/')" /> <br><br>
+        <input type="reset"><br> <br>
+        <input type="button" value="Limpar" onClick="window.location.reload()"> 
+        
+
+        <h1 id="resultado">  </h1> 
+        
+    </form>
+
+</body>
+
+</html>

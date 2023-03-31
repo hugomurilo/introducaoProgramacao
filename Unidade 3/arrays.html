@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Arrays</title>
+
+    <script>
+        const carros = ['gol', 'fusca', 'versa', 'up'] // essa é uma array
+
+// formas de navegar em uma array
+ /*       
+        console.log(carros[1]);
+
+        for(let elemento of carros){
+            console.log(elemento)
+        }
+
+        for(let i = 0; i < 4; i++){
+            console.log(carros[i])
+
+        }
+*/
+        // Trabalhando com a dinamicidade de uma array:
+/*
+        console.table(carros)
+        carros.push('fiesta')    // o push adiciona elementos na array no final
+        console.table(carros)
+
+        carros.unshift('vectra') // o unshift adiciona elementos na array no início 
+        console.table(carros)
+
+        carros.pop()            // o pop retira um elemento do final na array
+        console.table(carros)
+
+        carros.shift()         // o shifht retira um elemento do início na array
+        console.table(carros)
+
+        const car = carros.pop() // aqui estou atribuindo um elemento da array em uma variável retirando da array
+        console.table(carros)
+        console.table(car)
+*/
+        
+        carros.push('fiesta') 
+        carros.unshift('vectra')
+        console.table(carros)
+    //o splice adiciona, retira e edita um item de uma array
+      //  carros.splice(1, 2)   // vá até a posição 1 e exclui dois itens a partir dela. 
+     //   console.table(carros)
+        carros.splice(1, 0, 'uno') // vá até a posição 1, não exclui nada, adiciona uno
+        console.table(carros)
+
+        carros.sort() // o sort ordena os itens da array por ordem alfabética
+        console.table(carros)
+        
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

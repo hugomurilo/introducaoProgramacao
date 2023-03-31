@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Recursividade</title>
+<script >
+
+function fatorial(x){
+    if(x < 1){
+        return 1
+    } else{
+        return x * fatorial(x-1)
+    }
+
+    
+}
+
+console.log(fatorial(5))
+
+/*
+A recursividade é chamar uma função dentro da prórpia função repetidas vezes. No nosso exemplo, 
+isso é um loop, pois estamos utilizando o if else. Para o exemplo de fatorial(5), ela foi chamada e 
+nesse instante cai no if else. Como 5>1, então ele vai para x * fatorial (4). Nesse instante a função 
+fatorial(4) é chamada, então tudo se repete. Quando chega em fatorial(1), teremos 1 * fatorial(0), 
+com a função fatorial(0) sendo chamada, fazendo com que caia na condição do if, pois 0 < 1 e assim retorna o
+primerio valor que é 1, ou seja, fatorial (0) = 1. A partir disso, o sistema consegue calcular todo o 
+restante, pois agora existe um valor de referência e o cálculo é feito de trás pra frente. 
+*/
+
+
+
+
+
+
+</script>
+
+
+</head>
+<body>
+   
+
+</body>
+
+</html>
