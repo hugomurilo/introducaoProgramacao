@@ -18,21 +18,22 @@
             marcar no tabuleiro.
         </p>
         <hr>
-
+        
         <div id="board"></div><br>
-       
+        <div id="aviso" style="font-size: 200%;">Vez do jogador 1</div>
         
         <div>
-        Linha: <input type="number" min="1" max="3" id="linha" style="margin-bottom: 0.5%; margin-left: 0.77%;"><br>
-        Coluna: <input type="number" min="1" max="3" id="coluna" ><br>
+        <b>Linha:</b> <input type="number" min="1" max="3" id="linha" style="margin-bottom: 0.5%; ">
+        <b  style="margin-left: 1%;">Coluna:</b> <input type="number" min="1" max="3" id="coluna" >
+        
         </div>
 
         
-        <button onclick="jogar()" style="margin-bottom: 0.5%;">Marcar</button><br>
+        <button onclick="jogar()" style="margin-bottom: 0.5%;">Marcar</button>
        
         <input type="button" value="Reiniciar" onClick="window.location.reload()"> 
         
-        <div id="aviso" style="font-size: 200%;">Vez do jogador 1</div>
+        
 
         
     </body>
