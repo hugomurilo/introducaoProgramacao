@@ -1,0 +1,31 @@
+h1{ 
+    color: rgb(255, 249, 249);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: verdana;
+    font-size: 200%;
+    
+}
+p{
+    font-family: verdana;
+    font-size: 100%;
+    text-align:justify;
+    margin: 5px;
+    margin-left: 2%;
+}
+
+
+header{
+    background-color: #7a2323;
+    font-family: verdana;
+    
+}
+
+div {
+    text-align:center;
+    font-family: verdana;
+    padding: 5px;
+    margin: 10px;
+  }
+
+  
