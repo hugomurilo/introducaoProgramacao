@@ -9,9 +9,9 @@ h1{
 p{
     font-family: verdana;
     font-size: 100%;
-    text-align:justify;
+    text-align:center;
     margin: 5px;
-    margin-left: 2%;
+    
 }
 
 
@@ -28,4 +28,9 @@ div {
     margin: 10px;
   }
 
+  #aviso{
+    text-align: center;
+   
+
+  }
   
