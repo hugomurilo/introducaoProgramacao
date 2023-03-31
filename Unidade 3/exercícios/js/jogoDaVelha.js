@@ -25,14 +25,14 @@ function iniciar(){
 }
 
 function exibir(){
-    let tabela = "<table cellpadding ='40' border = '1'  style=' margin-left: 40%;'>"
+    let tabela = "<table cellpadding ='30' border = '1'  style=' margin-left: 42%;'>"
     for(let i = 0 ; i < 3 ; i++){
         tabela += "<tr>"
         for(let j = 0; j < 3 ; j++){
             
             switch(tabuleiro[i][j]){
-                case -1 : marcador = 'X'; break;
-                case 1 : marcador = 'O'; break
+                case -1 : marcador = '<strong  style="font-size: 200%"> X </strong>'; break;
+                case 1 : marcador = '<strong  style="font-size: 200%"> O </strong>'; break
                 default: marcador = '_'
             } 
 
@@ -113,4 +113,3 @@ function checar(){
 function numeroJogador(){
     return (jogador%2 + 1)
 }
-
